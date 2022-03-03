@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        font-size: 14px;
+      }
+
+      #btn {
+        color: white;
+        font-weight: 500;
+        background-color: #238636;
+        padding: 5px 16px;
+        border: 1px solid;
+        border-radius: 6px;
+      }
+
+      #btn:hover {
+        opacity: 0.8;
+      }
+
+      .container__block {
+        margin: 10px 0;
+      }
+
+      .container__label {
+        margin-bottom: 3px;
+      }
+
+      .container__input {
+        border: 1px solid lightgrey;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__block container__block_org">
+        <div class="container__label">Organization</div>
+        <input class="container__input"/>
+      </div>
+      <div class="container__block container__block_repo">
+        <div class="container__label">Repository</div>
+        <input class="container__input"/>
+      </div>
+      <button id="btn" class="container__btn">OK</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

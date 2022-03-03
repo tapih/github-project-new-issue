@@ -1,0 +1,19 @@
+{
+  "name": "GitHub Project(Beta) New Issue",
+  "version": "1.0",
+  "description": "GitHub Project(Beta)にNew Issueボタンを追加",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/projects/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  },
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"]
+}
