@@ -4,7 +4,7 @@ chrome.storage.sync.get(['organization', 'repository'], ({ organization, reposit
     return;
   }
 
-  const parent = document.querySelector('#memex-root > div[display=contents] > div.Box-sc-1gh2r6s-0:nth-child(2) > div.Box-sc-1gh2r6s-0:nth-child(2)');
+  const parent = document.querySelector('#memex-root > div[display=contents] > div:nth-child(2) > div:nth-child(2)');
   const a = document.createElement('a');
   a.setAttribute('href', `/${organization}/${repository}/issues/new/choose`)
 
